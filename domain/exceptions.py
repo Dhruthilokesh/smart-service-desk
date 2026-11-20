@@ -1,23 +1,18 @@
-class ServiceDeskError(Exception):
-    """Base exception for service desk application errors."""
+class DuplicateRequestError(Exception):
+    """Raised when a request ID already exists."""
     pass
 
 
-class DuplicateRequestError(ServiceDeskError):
-    """Raised when a duplicate request ID is entered."""
+class RequestNotFoundError(Exception):
+    """Raised when a service request cannot be found."""
     pass
 
 
-class RequestNotFoundError(ServiceDeskError):
-    """Raised when a requested service ID does not exist."""
-    pass
-
-
-class InvalidPriorityError(ServiceDeskError):
+class InvalidPriorityError(Exception):
     """Raised when an invalid priority is provided."""
     pass
 
 
-class RequestAlreadyResolvedError(ServiceDeskError):
+class RequestAlreadyResolvedError(Exception):
     """Raised when an already resolved request is resolved again."""
     pass

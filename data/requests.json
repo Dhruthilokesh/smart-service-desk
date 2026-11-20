@@ -1,0 +1,16 @@
+[
+    {
+        "request_id": "SR101",
+        "employee_name": "Rahul",
+        "issue": "laptop not working",
+        "priority": "HIGH",
+        "status": "RESOLVED"
+    },
+    {
+        "request_id": "SR102",
+        "employee_name": "Ananya",
+        "issue": "keyboard not working",
+        "priority": "MEDIUM",
+        "status": "RESOLVED"
+    }
+]
